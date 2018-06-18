@@ -1,0 +1,272 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: whitesmoke;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 96vw;
+    color: black;
+    background-image: url(content/images/logo/png-logos/2x-hacker-logo-with-name-transparent.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 100px;
+    margin: .5em;
+    font-family: 'Roboto Slab', sans-serif;
+    text-transform: lowercase;
+}
+header h1 {
+    font-size: 2em;
+    white-space: nowrap;
+    align-self: flex-start;
+    margin: .5em;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+#primary-nav {
+    margin-top: auto;
+    margin-bottom: auto;
+    overflow: hidden;
+}
+#secondary-nav {
+    margin-top: .5em;
+    margin-left: auto;
+    margin-right: auto;
+    font-family:'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 1.5em;
+}
+.current-page {
+    color: maroon;
+}
+ul {
+    display: flex;
+}
+ul li {
+    flex-grow: 1;
+    justify-content: space-around;
+    color: black;
+    margin-right: 1em;
+    margin-left: 1em;
+}
+ul li a {
+    text-decoration: none;
+    color: black;
+}
+ul li a:hover {
+    color: maroon;
+}
+h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 4em;
+    text-align: center;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+#middle {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 94vh;
+    width: 95vw;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: scroll;
+    margin: 1em;
+}
+/*change this back to #main-content */
+
+#events, #booking {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 1em;
+}
+footer {
+    background-color: black;
+    color: white;
+    font-size: 0.7em;
+    padding: 0.25em;
+    max-height: 6vh;
+    text-align: center;
+    overflow: hidden;
+}
+footer a {
+    color: white;
+}
+footer a:visited {
+    color: maroon;
+}
+/* Specific css for this page starts here!!!*/
+
+#events, #booking {
+    line-height: 1.5;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.info {
+    display: flex;
+    width: 45%;
+    height: 500px;
+    flex-direction: column;
+    padding: 1em;
+    color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 800px;
+}
+#events :hover {
+    background: brown;
+}
+h2 {
+    font-size: 3vw;
+    font-family: 'Roboto Slab', serif;
+}
+h4 {
+    font-size: 1.5em;
+    font-family: 'Roboto Slab', serif;
+}
+h3 {
+    font-weight: 700;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.25em;
+    margin-bottom: 0.25em;
+    text-align: center;
+    text-transform: uppercase;
+}
+em {
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+}
+p {
+    margin-bottom: .5em;
+    font-weight: 300;
+    font-size: 1.2em;
+    font-family: 'Josefin Sans', sans-serif;
+}
+/*background images*/
+
+#mind-mapper {
+    background-image: url(content/images/events/mind-mapper-pro.jpg);
+}
+#mirror-front {
+    background-image: url(content/images/events/mirror-front.jpg);
+}
+#usability-engineering {
+    background-image: url(content/images/events/usablility-engineering.jpg);
+}
+#robot {
+    background-image: url(content/images/events/robot.jpg);
+}
+#communication {
+    background-image: url(content/images/events/communication.jpg);
+}
+#communication h2, #hacker h2 {
+    font-size: 2.5vw;
+}
+#linen {
+    background-image: url(content/images/events/protector-in-linen.jpg);
+    background-size: 900px;
+}
+#virtual-reality {
+    background-image: url(content/images/events/virtual-reality.jpg);
+}
+#hacker {
+    background-image: url(content/images/events/hacker.jpg);
+}
+#writing-code {
+    background-image: url(content/images/events/writing-code.jpg);
+}
+#flexbox {
+    background-image: url(content/images/events/flexbox.jpg);
+}
+#controller {
+    background-image: url(content/images/events/controller.jpg);
+}
+#helvetica {
+    background-image: url(content/images/events/helvetica.jpg);
+}
+
+form {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 1em;
+}
+
+#booking p {
+    text-align: center;
+}
+label {
+    display: inline-block;
+    width: 10em;
+    text-align: right;
+    font-size: 1.2em;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+}
+input, textarea {
+    margin: 1em;
+    width: 500px;
+    max-width: 600px;
+    min-width: 300px;
+    max-height: 700px;
+    border: 1px solid #999;
+}
+input:focus, textarea:focus {
+    border-color: #000;
+}
+textarea {
+    vertical-align: top;
+    height: 5em;
+    resize: vertical;
+}
+.button {
+    display: flex;
+    flex-direction: row;
+}
+button {
+    margin-left: auto;
+    margin-right: auto;
+    height: 3em;
+    width: 10em;
+}

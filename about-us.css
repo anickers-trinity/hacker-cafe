@@ -1,0 +1,267 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: whitesmoke;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 96vw;
+    color: black;
+    background-image: url(content/images/logo/png-logos/2x-hacker-logo-with-name-transparent.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 100px;
+    margin: .5em;
+    font-family: 'Roboto Slab', sans-serif;
+}
+header h1 {
+    font-size: 2em;
+    white-space: nowrap;
+    align-self: flex-start;
+    margin: .5em;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+#primary-nav {
+    margin-top: auto;
+    margin-bottom: auto;
+    overflow: hidden;
+    text-transform: lowercase;
+}
+#secondary-nav {
+    margin-top: .5em;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 1.5em;
+}
+.current-page {
+    color: maroon;
+}
+ul {
+    display: flex;
+}
+ul li {
+    flex-grow: 1;
+    justify-content: space-around;
+    color: black;
+    margin-right: 1em;
+    margin-left: 1em;
+}
+ul li a {
+    text-decoration: none;
+    color: black;
+}
+ul li a:hover {
+    color: maroon;
+}
+h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 4em;
+    text-align: center;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+#middle {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 94vh;
+    width: 95vw;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: scroll;
+    margin: 1em;
+}
+#main-content {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 1em;
+}
+footer {
+    background-color: black;
+    color: white;
+    font-size: 0.7em;
+    padding: 0.25em;
+    max-height: 6vh;
+    text-align: center;
+    overflow: hidden;
+    font-family: 'Josefin Sans', sans-serif;
+}
+footer a {
+    color: white;
+}
+footer a:visited {
+    color: maroon;
+}
+/*Different code starts here!!*/
+
+#main-content {
+    line-height: 1.5;
+    font-family: 'Josefin Sans', sans-serif;
+}
+img {
+    height: 300px;
+    padding: .5em;
+    background-color: white;
+    margin: 1em;
+    margin-left: none;
+}
+.profile {
+    display: flex;
+    flex-direction: row;
+}
+.content {
+    background-color: white;
+    padding: 1em;
+    height: 20%;
+    align-self: center;
+    margin: .25em;
+}
+h2 {
+    font-family: 'Josefin Sans', serif;
+    margin-left: none;
+    font-size: 2.5em;
+    font-weight: 800;
+    text-align: center;
+    color: maroon;
+}
+h3 {
+    font-weight: 100;
+    font-size: 2em;
+    margin-bottom: 0.25em;
+    text-align: center;
+}
+.profile h3 {
+    font-size: 2em;
+    margin-bottom: 0.25em;
+    text-align: center;
+    text-align: left;
+}
+em {
+    font-style: italic;
+    font-weight: 100;
+    font-size: 0.75em;
+}
+blockquote {
+    font-family: 'Roboto', sans-serif;
+    max-width: 70vw;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    font-weight: 300;
+    margin-bottom: 1.5em;
+}
+p {
+    margin-bottom: 1em;
+    text-align: center;
+    font-weight: 400;
+}
+.hours {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    justify-content: center;
+}
+.about-us p {
+    text-align: left;
+}
+#img1 {
+    float: right;
+}
+#img2 {
+    float: left;
+}
+#social-media img {
+    background-color: rgba(0, 0, 0, 0);
+    width: 100px;
+    height: 100px;
+}
+#social-media {
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+form {
+    padding: 1em;
+}
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+label {
+    display: inline-block;
+    width: 10em;
+    text-align: right;
+    font-size: 1.2em;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+}
+input, textarea {
+    margin: 1em;
+    width: 300px;
+    max-width: 600px;
+    min-width: 300px;
+    max-height: 700px;
+    border: 1px solid #999;
+}
+input:focus, textarea:focus {
+    border-color: #000;
+}
+textarea {
+    vertical-align: top;
+    height: 5em;
+    resize: vertical;
+}
+.button {
+    display: flex;
+    flex-direction: row;
+}
+button {
+    margin-left: auto;
+    margin-right: auto;
+    height: 3em;
+    width: 10em;
+}
